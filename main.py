@@ -92,9 +92,9 @@ AGENT_CONFIG = ChatGPTAgentConfig(
 # free, but there are plenty of other options that are slower but
 # higher quality (like Eleven Labs below, needs key) available in
 # vocode.streaming.models.synthesizer.
-SYNTH_CONFIG = StreamElementsSynthesizerConfig.from_telephone_output_device()
-# SYNTH_CONFIG = ElevenLabsSynthesizerConfig.from_telephone_output_device(
-#   api_key=os.getenv("ELEVEN_LABS_API_KEY") or "<your EL token>")
+# SYNTH_CONFIG = StreamElementsSynthesizerConfig.from_telephone_output_device()
+SYNTH_CONFIG = ElevenLabsSynthesizerConfig.from_telephone_output_device(
+  api_key=os.getenv("ELEVEN_LABS_API_KEY"))
 
 
 
