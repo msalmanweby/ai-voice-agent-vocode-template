@@ -16,7 +16,7 @@ from vocode.streaming.telephony.server.base import (
     TwilioInboundCallConfig,
     TelephonyServer,
 )
-from vocode.streaming.models.synthesizer import StreamElementsSynthesizerConfig # ,ElevenLabsSynthesizerConfig
+from vocode.streaming.models.synthesizer import StreamElementsSynthesizerConfig ,ElevenLabsSynthesizerConfig
 
 # Imports our custom actions
 from speller_agent import SpellerAgentFactory
